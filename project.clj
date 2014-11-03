@@ -9,7 +9,9 @@
                  [compojure           "1.1.9"]
                  [com.taoensso/timbre "3.1.1"]
                  [org.clojure/core.match "0.2.1"]
-                 [http-kit "2.1.16"]]
+                 [http-kit "2.1.16"]
+                 [clojurewerkz/meltdown "1.1.0"]
+                 [amazonica "0.2.29" :exclusions [joda-time]]]
   :plugins      [[lein-ring "0.8.11"]
                  [lein-environ "1.0.0"]]
   :ring {:handler eventer.routes/app})
